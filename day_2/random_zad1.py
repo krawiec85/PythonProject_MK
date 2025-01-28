@@ -15,5 +15,6 @@ wyn = random.choice(lista_kule)
 lista_kule.remove(wyn)
 print(wyn)
 
-print(random.choices(lista_kule, k=6))
+print(random.choices(lista_kule, k=6)) # z powtórzeniami
+print(random.sample(lista_kule, k=6)) # bez powtórzeń
 print(random.sample(lista_kule, 6))
