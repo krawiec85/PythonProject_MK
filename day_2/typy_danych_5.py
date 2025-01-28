@@ -34,3 +34,8 @@ print(dictionary)
 
 dict_small = {'x':2}
 print(dict_small)
+
+# input() - pozwala wprowadzić dane do komputera
+tekst = input('Podaj imię')
+print(tekst)
+
