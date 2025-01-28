@@ -39,11 +39,11 @@ print(lista[::-1])
 lista[3] = 'Asia'
 print(lista)
 # dopisanie elementu do listy we wzkazanym miejscu
-lista.insert(1,'Mateusz')
+lista.insert(1, 'Mateusz')
 print(lista)
 lista.insert(15, "Mateusz")
 print(lista)
-#sprawdzenie indeksu dla wskazanego elementu
+# sprawdzenie indeksu dla wskazanego elementu
 print(lista.index('Asia'))
 lista.append('Asia')
 print(lista)
@@ -60,7 +60,7 @@ print(f'{a=}, {b=}')
 b = 9
 print(f'{a=}, {b=}')
 
-lista_2 = lista # odpowiednik a = b
+lista_2 = lista  # odpowiednik a = b
 print(lista_2)
 print(lista)
 lista.clear()
@@ -70,14 +70,14 @@ liczby = [54, 999, 34, 22, 12.34, 567]
 print(liczby)
 liczby.sort()
 print(liczby)
-liczby[3]=666
+liczby[3] = 666
 print(liczby)
 
 tekst = 'Pyth on.'
 lista1 = list(tekst)
 print(lista1)
 
-lista2=[tekst]
+lista2 = [tekst]
 print(lista2)
 
 krotka = tuple(liczby)
