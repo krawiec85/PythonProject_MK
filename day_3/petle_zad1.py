@@ -1,5 +1,6 @@
 # możliwość wykonania kodu wielokrotnie
 # for - pętla iteracyjna
+from itertools import zip_longest
 
 for i in range(5):  # 01234
     print(i)
@@ -92,7 +93,7 @@ for i, w in zip(imiona, wiek):
 
 # 0 Radek 44
 
-imiona = ["Radek", 'Tomek', 'Zenek', 'Ania']
+imiona = ["Radek", 'Tomek', 'Zenek', 'Ania', 'Ewa']
 wiek = [44, 55, 42, 27]
 for i in enumerate(zip(imiona, wiek)):
     print(i)
@@ -106,3 +107,28 @@ for i, (o, w) in enumerate(zip(imiona, wiek)):
     print(i, o, w)
 # 0 Radek 44
 # 1 Tomek 55
+
+zipped = zip_longest(imiona, wiek, fillvalue=None)
+print(zipped)  # <itertools.zip_longest object at 0x0000028BC5135080>
+# itrator - podstawia dane na żądanie w kolejności
+print('------')
+print(5 * '-')
+# dane z iterator można wykorzystać raz
+for i in zipped:
+    print(i)
+# ('Radek', 44)
+# ('Tomek', 55)
+# ('Zenek', 42)
+# ('Ania', 27)
+# ('Ewa', None)
+
+print('------')
+for i in zipped:
+    print(i)
+zipped = zip_longest(imiona, wiek, fillvalue=None)
+zip_list = list(zipped)
+for i in zip_list:
+    print(i)
+
+for o, w in zip_list:
+    print(o, w)
