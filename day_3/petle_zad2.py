@@ -28,3 +28,7 @@ for k, v in pol_ang.items():
     ang_pol[v] = k
 print(ang_pol) # {'cat': 'kot', 'dog': 'pies', 'roof': 'dach'} - zamienione miejscami
 
+# zrób pętlę po słowniku
+for k, v in ang_pol.items():
+    print(k, '=>', v)
+    print(v)
