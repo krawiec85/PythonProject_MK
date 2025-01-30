@@ -28,3 +28,5 @@ odejmij(1, 2, c=9) # -10
 # argumenty pozycyjne muszą być podane przed argumentami kolejnościami !!!!
 
 print (dodaj())
+# 14
+# None
